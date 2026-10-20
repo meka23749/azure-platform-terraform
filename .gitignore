@@ -1,0 +1,20 @@
+@"
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfplan
+tfplan
+.terraform.lock.hcl.bak
+
+# Never commit real values
+*.tfvars
+!*.tfvars.example
+backend-*.hcl
+!backend-*.hcl.example
+
+# Python
+__pycache__/
+.venv/
+"@ | Set-Content -Encoding ascii .gitignore
